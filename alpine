@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Run alpine image to experiement
+
+PWD=`pwd`
+docker run -v "$PWD:/tmp" -it --rm alpine /bin/sh

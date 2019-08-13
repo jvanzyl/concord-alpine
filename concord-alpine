@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Run concord-alpine image to experiment
+
+PWD=`pwd`
+docker run -v "$PWD:/tmp" -it --rm jvanzyl/concord-alpine:latest /bin/sh
