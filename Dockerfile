@@ -9,5 +9,8 @@ RUN apk update
 RUN apk add ca-certificates
 RUN rm -rf /var/cache/apk/*
 
+# Setup the path to include the new binaries we have mounted in the workspace
+ENV PATH="/workspace/concord/bin:${PATH}"
+
 # Run as the concord user
 USER concord
